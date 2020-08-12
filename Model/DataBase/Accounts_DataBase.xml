@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account>
+    <IsAdministrator>false</IsAdministrator>
+    <Name>Иван</Name>
+    <LastName>Иванов</LastName>
+    <Email>qwerty@gmail.com</Email>
+    <PhoneNumber>0965423431</PhoneNumber>
+    <Login>ivanivanov</Login>
+    <Password>Test123@</Password>
+  </Account>
+  <Account>
+    <IsAdministrator>false</IsAdministrator>
+    <Name>Богдан</Name>
+    <LastName>Пономаренко</LastName>
+    <Email>cbsproject@gmail.com</Email>
+    <PhoneNumber>0985423651</PhoneNumber>
+    <Login>bogdanponomarenko</Login>
+    <Password>Test321@</Password>
+  </Account>
+  <Account>
+    <IsAdministrator>false</IsAdministrator>
+    <Name>Bogdan</Name>
+    <LastName>Ponomarenko</LastName>
+    <Email>ponomarenko378@mail.ru</Email>
+    <PhoneNumber>0991996410</PhoneNumber>
+    <Login>Bogdan378</Login>
+    <Password>Password@123</Password>
+  </Account>
+</ArrayOfAccount>

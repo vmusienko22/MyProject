@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfFlight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Flight>
+    <Id>1</Id>
+    <Staus>Сheck_In_Open</Staus>
+    <DeparturePoint>Киев</DeparturePoint>
+    <DestinationPoint>Варшава</DestinationPoint>
+    <DepartureDateTime>2007-01-01T16:20:00</DepartureDateTime>
+    <PlaneID>2546</PlaneID>
+  </Flight>
+</ArrayOfFlight>

@@ -1,0 +1,113 @@
+﻿<Window x:Class="UI.MainWindow"
+         
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"      
+        xmlns:local="clr-namespace:UI"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1"/>
+
+                    </LinearGradientBrush>
+                </Border.Background>
+
+
+            </Border>
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="Images/plane.png" Height="100" Margin="134,0,128,0" HorizontalAlignment="Center"/>
+                <TextBlock Text="FreeFly"
+                           FontWeight="Light"
+                           FontFamily="Helvetica"
+                           FontSize="22"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="LoginTextBox" FontFamily="Helvetica"
+                         FontWeight="Light"
+                         Text="Bogdan378"
+                         FontSize="22"
+                         HorizontalAlignment="Center"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Width="235"
+                         HorizontalContentAlignment="Left"
+                         Opacity="0.5"
+                         Height="25"
+                         Margin="64,0,0,0"/>
+                    <iconPacks:PackIconMaterial Kind="LoginVariant"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <PasswordBox Name="PasswordBox" FontFamily="Helvetica"
+                         FontWeight="Light"
+                         Password="Password@123"
+                         FontSize="22"
+                         HorizontalAlignment="Center"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Width="235"
+                         HorizontalContentAlignment="Left"
+                         Opacity="0.5"
+                         Height="25"
+                         Margin="64,0,0,0"/>
+                    <iconPacks:PackIconMaterial Kind="TextboxPassword"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Foreground="White"/>
+                </StackPanel>
+                <Border Width="250"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                    <Button x:Name="SignInButton" Width="100" Height="35" Content="ВОЙТИ" Margin="65,0,10,0" Click="SignInButton_Click" />
+                    <Button x:Name="RegisterButton" Width="150" Height="35" Content="ЗАРЕГИСТРИРОВАТЬСЯ" Click="RegisterButton_Click" Command="{Binding RegisterButton_Click}" />
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+        </Grid>
+
+        <Frame x:Name="Frame"/>
+        <Frame x:Name="MainUserManuFrame" Navigated="MainUserManuFrame_Navigated"/>
+            
+        
+
+    </Grid>
+</Window>
